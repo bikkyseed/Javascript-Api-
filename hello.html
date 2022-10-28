@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+ <h1 id="head">sum of 2 2d array</h1>// 
+ <button onmouseover="document.getElementById('head').style.color='blue'" onmouseleave="document.getElementById('head').style.color='black'" >Click me!</button>
+ 
+ 
+
+
+    <script>
+        // const fruits = ["banana", "Orange", "Apple", "Mango"];
+
+        // let len = fruits.length;
+
+        // let text = "";
+        // for(let i = 0; i<len;i++){
+        //     text +="\n"+ fruits[i];
+        // }
+        // console.log(text);
+        // document.write(text);
+        // Create one dimensional array
+        
+        // var arr1 = new Array(2);
+        // //a = arr1.length;
+        //     document.write("hum 2d array banane waale hai\n");
+        // //Create 2d array
+        // for(var i = 0;i<arr1.length;i++){//0,1=i
+        //     arr1[i] = new Array(2);              
+        // }
+
+        // //loop  ti intialize 2d array elements
+        // var h = 0;
+        // for(var i = 0;i<2;i++){
+        //     for(var j = 0;j<2;j++){
+        //         arr1[i][j] = h++;//arr1[0][1] = [[0+0=0],[1+0=1]]
+        //     }                  
+        // }
+
+        // //loop to dislpay the elemts of 2d array
+        // for(var i = 0;i<2;i++){
+        //     /////
+        //     for(var j = 0;j<2;j++){
+        //        document.write(arr1[i] [j]+" ")//arr1[0][1] = [[0+0=0],[1+0=1]]
+        //     }  
+        //     ///
+        //       document.write("<br>");              
+        // }
+     
+    //     var mat1 = [
+    //         [1,2],
+    //         [3,4]
+    //     ];
+    //     var mat2 = [
+    //         [5,6],
+    //         [7,8]];
+
+    //     //     [
+    //     //     [6,8],
+    //     //     [10,12]
+    //     //   ]
+
+    //     document.write("Given matrix are:<br>");
+    //     document.write("***Mtrix1***<br>");
+    //     var i,j;
+    //     for(i = 0;i<2;i++){//0,1
+    //         for(j =0;j<2;j++){ //nestedloop//0,1
+    //             document.write(mat1[i][j]+"&nbsp;&nbsp;&nbsp;");
+    //         }
+    //         document.write("<br>");
+
+    //     }
+
+    //     document.write("***Mtrix2***<br>");
+        
+    //     for(i = 0;i<2;i++){//0,1
+    //         for(j =0;j<2;j++){ //nestedloop//0,1
+    //             document.write(mat2[i][j]+"&nbsp;&nbsp;&nbsp;");
+    //         }
+    //         document.write("<br>");
+    //     }
+
+    // //initialze karane ka code 
+    //     var mat3 = [[],[]];
+
+    //     for(i = 0;i<2;i++){//0,1
+    //         for(j =0;j<2;j++){ //nestedloop//0,1
+    //             mat3[[i],[j]] = mat1[i][j]+mat2[i][j];
+    //         }
+            
+    //     }
+    //     document.write("***addition of matrix***<br>");
+    //     //display karane ka code
+    //     for(i = 0;i<2;i++){//0,1
+    //         for(j =0;j<2;j++){ //nestedloop//0,1
+    //             document.write(mat3[[i],[j]]+"&nbsp;&nbsp;&nbsp;")
+    //         }
+    //         document.write("<br>");
+    //     }
+
+  
+//    hello = function(){
+//     return "Hello amit<br>";
+//    }
+
+//    document.write(hello());
+//    document.write("arrow function<br>")
+
+//    amit = () =>{
+//     return "hello amit<br>";
+//    }
+//    document.write(amit()) ; 
+//    //()=> is called function
+//    let a = 5;
+//    let b = 8;
+//    let g = "bikram";
+//    let h = "amity";
+//    c = a+b;
+
+// //    bikky = () => "sum of a and b is: "+c;
+// //    document.write(bikky()) ;
+// document.write("string method<br>")
+//    bikky = () => `The Sum of ${a} and ${b} is itna made by ${g} and ${h} ` +c; 
+//    document.write(bikky()) ;
+
+
+    //  document.write(".This. keybword<br>") 
+ 
+    //    const person = {
+    //     firstName: "amit",
+    //     lastName: "BHAGAT",
+    //     id: 23,
+    //     fullName: function(){
+    //         return this.firstName + " " + this.lastName;//access keyword ko uska data fetch karne ka
+    //     }
+         
+    //    };
+
+    //    document.write(person.fullName()); 
+
+// class Amit{
+//     constructor(name,year){
+//        //condtions
+//        this.name = name;
+//        this.year = year;
+//     }
+//     age(){
+//         let date = new Date();
+//         return date.getFullYear() - this.year;
+//     }
+//     bhagat(){
+//         return "tum awesome ho";
+//     }
+// }
+
+// const bikky = new Amit("amit",2012);// for creating object
+// document.write(bikky.age()+bikky.bhagat());
+
+// class Car{
+//     constructor(brand){
+//         this.carname = brand;
+//     }
+//     present(){
+//         return 'mera paas ' + this.carname;
+//     }
+// }
+
+//extends method
+// class Model extends Car {
+//      constructor(brand, mod){
+//         super(brand);
+//         this.model = mod;
+//      }
+//      show(){
+//         return this.present() + ', it is a' + this.model;
+//      }
+// }
+
+// let myCar = new Model("Honda","old model hai");
+// document.write((myCar.show()))
+
+// function myFirst(){
+//     myDisplayer("hello ");
+// }
+
+// function mySecond(){
+//     myDisplayer("Goodbye ");
+// }
+
+// myFirst();
+// mySecond();
+
+// function myDisplayer(some) {
+//   document.getElementById("demo").innerHTML = some;
+// }
+
+// function myDisplayer(something){
+//     document.getElementById("demo").innerHTML = something;
+// }
+
+// function myCalculation(num1, num2, myCallback){
+//     let sum = num1 + num2;//12
+//     myCallback(sum);
+// }
+
+// myCalculation(6,6, myDisplayer);
+
+// Async
+
+function myFirst(){
+    myAmit("hello");
+}
+
+function mySecond(){
+    myBikky("goodbye");
+}
+
+myFirst();
+mySecond();
+
+function myDisplay(some){
+    document.write(some);
+}
+
+    </script>
+<style>
+    
+</style>
+</body>
+
+</html>

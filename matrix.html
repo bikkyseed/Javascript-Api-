@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Addition of 2d Matrices</h1>
+    <p>lets code</p>
+
+
+    <script>
+        var mat1 = [
+            [4, 5],
+            [6, 9]
+        ];
+
+        var mat2 = [
+            [2, 3],
+            [1, 7]
+        ];
+        document.write("given matrixes are: <br>");
+        document.write("*****Matrix 1****<br>");
+
+        var i, j;
+        for (i = 0; i < 2; i++) {
+            for (j = 0; j < 2; j++) {
+                document.write(mat1[i][j] + " &nbsp;&nbsp;&nbsp;")
+            }
+            document.write("<br>")
+        }
+
+        document.write("*****Matrix 2****<br>");
+
+        
+        for (i = 0; i < 2; i++) {
+            for (j = 0; j < 2; j++) {
+                document.write(mat2[i][j] + " &nbsp;&nbsp;&nbsp;")
+            }
+            document.write("<br>")
+        }
+
+        var mat3 = [[],[]];
+        for (i = 0; i < 2; i++) {
+            for (j = 0; j < 2; j++) {
+                mat3[i][j]=mat1[i][j]+mat2[i][j];
+            }
+           
+        }
+
+        document.write("*****Addition of matrixes****<br>");
+
+        
+        for (i = 0; i < 2; i++) {
+            for (j = 0; j < 2; j++) {
+                document.write(mat3[i][j] + " &nbsp;&nbsp;&nbsp;")
+            }
+            document.write("<br>")
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
